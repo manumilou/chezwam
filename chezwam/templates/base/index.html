@@ -10,14 +10,16 @@
     ${self.head()}
 </head>
 <body>
+<div id="container">
     ${self.header()}
-    ##${self.tabs()}
+    ${self.tabs()}
     ${self.menu()}
     ${self.heading()}
-    ${self.breadcrumbs()}
 	${self.flash()}
     ${next.body()}
     ${self.footer()}
+
+</div>
 </body>
 </html>
 
@@ -25,12 +27,22 @@
 <%def name="head()">
 	${h.stylesheet_link(h.url_for('/css/main.css'))}
 </%def>
-<%def name="header()"><a name="top"></a></%def>
-##<%def name="tabs()">${navigation.tabs()}</%def>
+
+<%def name="header()">
+<div id="header">
+	<a name="top"></a>
+</div>
+</%def>
+
+<%def name="tabs()">${navigation.tabs()}</%def>
 <%def name="menu()">${navigation.menu()}</%def>
 <%def name="heading()"><h1>${c.heading or 'No Title'}</h1></%def>
-<%def name="breadcrumbs()">${navigation.breadcrumbs()}</%def>
-<%def name="footer()"><p><a href="#top">Top ^</a></p></%def>
+
+<%def name="footer()">
+<div id="footer">
+	<p><a href="#top">Top ^</a></p>
+</div>
+</%def>
 
 <%def name="flash()">
     % if session.has_key('flash'):

@@ -102,8 +102,8 @@ class PageController(BaseController):
     	model.Nav.add_navigation_node(page, self.form_result['section'],
         	self.form_result['before'])
     	meta.Session.commit()
-       	# Issue an HTTP redirect
-		return redirect_to('path', id=page.id)
+		# Issue an HTTP redirect
+        return redirect_to('path', id=page.id)
 
     def edit(self, id=None):
 		if id is None:
@@ -144,10 +144,7 @@ class PageController(BaseController):
     	session['flash'] = 'Page successfully updated.'
     	session.save()
     	# Issue an HTTP redirect
-    	response.status_int = 302
-    	response.headers['location'] = h.url_for('path',
-        	id=page.id)
-    	return "Moved temporarily"
+        return redirect_to('path', id=page.id)
 
     def list(self):
 		c.pages=meta.Session.query(model.Page).all()
@@ -188,9 +185,6 @@ class PageController(BaseController):
     	session['flash'] = 'Tags successfully updated.'
     	session.save()
 		# Issue an HTTP redirect
-        response.status_int = 302
-        response.headers['location'] = h.url_for('path',
-            id=page.id)
-        return "Moved temporarily"
+        return redirect_to('path', id=page.id)
 
 
