@@ -1,0 +1,3 @@
+include chezwam/config/deployment.ini_tmpl
+recursive-include chezwam/public *
+recursive-include chezwam/templates *

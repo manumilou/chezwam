@@ -1,0 +1,1323 @@
+Traceback (most recent call last):
+  File "/usr/local/bin/paster", line 9, in <module>
+    load_entry_point('PasteScript==1.7.3', 'console_scripts', 'paster')()
+  File "/usr/local/lib/python2.6/dist-packages/PasteScript-1.7.3-py2.6.egg/paste/script/command.py", line 84, in run
+    invoke(command, command_name, options, args[1:])
+  File "/usr/local/lib/python2.6/dist-packages/PasteScript-1.7.3-py2.6.egg/paste/script/command.py", line 123, in invoke
+    exit_code = runner.run(args)
+  File "/usr/local/lib/python2.6/dist-packages/PasteScript-1.7.3-py2.6.egg/paste/script/command.py", line 218, in run
+    result = self.command()
+  File "/usr/local/lib/python2.6/dist-packages/PasteScript-1.7.3-py2.6.egg/paste/script/serve.py", line 276, in command
+    relative_to=base, global_conf=vars)
+  File "/usr/local/lib/python2.6/dist-packages/PasteScript-1.7.3-py2.6.egg/paste/script/serve.py", line 313, in loadapp
+    **kw)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 204, in loadapp
+    return loadobj(APP, uri, name=name, **kw)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 224, in loadobj
+    global_conf=global_conf)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 248, in loadcontext
+    global_conf=global_conf)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 278, in _loadconfig
+    return loader.get_context(object_type, name, global_conf)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 409, in get_context
+    section)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 431, in _context_from_use
+    object_type, name=use, global_conf=global_conf)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 361, in get_context
+    global_conf=global_conf)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 248, in loadcontext
+    global_conf=global_conf)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 285, in _loadegg
+    return loader.get_context(object_type, name, global_conf)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 561, in get_context
+    object_type, name=name)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 587, in find_egg_entry_point
+    possible.append((entry.load(), protocol, entry.name))
+  File "/usr/lib/python2.6/dist-packages/pkg_resources.py", line 1948, in load
+    entry = __import__(self.module_name, globals(),globals(), ['__name__'])
+  File "/home/remix/dev/ChezWam/chezwam/config/middleware.py", line 12, in <module>
+    from chezwam.config.environment import load_environment
+  File "/home/remix/dev/ChezWam/chezwam/config/environment.py", line 11, in <module>
+    from chezwam.config.routing import make_map
+  File "/home/remix/dev/ChezWam/chezwam/config/routing.py", line 9, in <module>
+    log = logging.getLogger(__name__)
+NameError: name 'logging' is not defined
+Traceback (most recent call last):
+  File "/usr/local/bin/paster", line 9, in <module>
+    load_entry_point('PasteScript==1.7.3', 'console_scripts', 'paster')()
+  File "/usr/local/lib/python2.6/dist-packages/PasteScript-1.7.3-py2.6.egg/paste/script/command.py", line 84, in run
+    invoke(command, command_name, options, args[1:])
+  File "/usr/local/lib/python2.6/dist-packages/PasteScript-1.7.3-py2.6.egg/paste/script/command.py", line 123, in invoke
+    exit_code = runner.run(args)
+  File "/usr/local/lib/python2.6/dist-packages/PasteScript-1.7.3-py2.6.egg/paste/script/command.py", line 218, in run
+    result = self.command()
+  File "/usr/local/lib/python2.6/dist-packages/PasteScript-1.7.3-py2.6.egg/paste/script/serve.py", line 276, in command
+    relative_to=base, global_conf=vars)
+  File "/usr/local/lib/python2.6/dist-packages/PasteScript-1.7.3-py2.6.egg/paste/script/serve.py", line 313, in loadapp
+    **kw)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 204, in loadapp
+    return loadobj(APP, uri, name=name, **kw)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 224, in loadobj
+    global_conf=global_conf)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 248, in loadcontext
+    global_conf=global_conf)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 278, in _loadconfig
+    return loader.get_context(object_type, name, global_conf)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 409, in get_context
+    section)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 431, in _context_from_use
+    object_type, name=use, global_conf=global_conf)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 361, in get_context
+    global_conf=global_conf)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 248, in loadcontext
+    global_conf=global_conf)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 285, in _loadegg
+    return loader.get_context(object_type, name, global_conf)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 561, in get_context
+    object_type, name=name)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 587, in find_egg_entry_point
+    possible.append((entry.load(), protocol, entry.name))
+  File "/usr/lib/python2.6/dist-packages/pkg_resources.py", line 1948, in load
+    entry = __import__(self.module_name, globals(),globals(), ['__name__'])
+  File "/home/remix/dev/ChezWam/chezwam/config/middleware.py", line 12, in <module>
+    from chezwam.config.environment import load_environment
+  File "/home/remix/dev/ChezWam/chezwam/config/environment.py", line 11, in <module>
+    from chezwam.config.routing import make_map
+  File "/home/remix/dev/ChezWam/chezwam/config/routing.py", line 9, in <module>
+    log = logging.getLogger(__name__)
+NameError: name 'logging' is not defined
+Starting server in PID 10730.
+serving on http://127.0.0.1:5000
+22:44:11,666 INFO  [sqlalchemy.engine.base.Engine.0x...ec2c] BEGIN
+22:44:11,670 INFO  [sqlalchemy.engine.base.Engine.0x...ec2c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.type = ?
+22:44:11,671 INFO  [sqlalchemy.engine.base.Engine.0x...ec2c] ['section']
+22:44:11,679 WARNI [chezwam.controllers.page] {'routes.route': <routes.route.Route object at 0xb6c1db4c>, 'beaker.cache': <beaker.cache.CacheManager object at 0xa2eedac>, 'pylons.routes_dict': {'action': u'view', 'controller': u'page', 'id': u'6'}, 'beaker.get_session': <bound method SessionMiddleware._get_session of <beaker.middleware.SessionMiddleware object at 0xa2eed6c>>, 'SCRIPT_NAME': '', 'webob.adhoc_attrs': {'language': 'en-us'}, 'REQUEST_METHOD': 'GET', 'PATH_INFO': '/page/view/6', 'SERVER_PROTOCOL': 'HTTP/1.1', 'QUERY_STRING': '', 'paste.throw_errors': True, 'pylons.action_method': <bound method PageController.view of <chezwam.controllers.page.PageController object at 0xa3352cc>>, 'CONTENT_LENGTH': '0', 'HTTP_ACCEPT_CHARSET': 'ISO-8859-1,utf-8;q=0.7,*;q=0.3', 'HTTP_USER_AGENT': 'Mozilla/5.0 (X11; U; Linux i686; en-US) AppleWebKit/533.4 (KHTML, like Gecko) Chrome/5.0.375.125 Safari/533.4', 'HTTP_CONNECTION': 'keep-alive', 'SERVER_NAME': '127.0.0.1', 'REMOTE_ADDR': '127.0.0.1', 'pylons.environ_config': {'session': 'beaker.session', 'cache': 'beaker.cache'}, 'pylons.pylons': <pylons.util.PylonsContext object at 0xa2faeec>, 'wsgi.url_scheme': 'http', 'wsgiorg.routing_args': (<routes.util.URLGenerator object at 0xa2f8e4c>, {'action': u'view', 'controller': u'page', 'id': u'6'}), 'SERVER_PORT': '5000', 'weberror.evalexception': <weberror.evalexception.EvalException object at 0xa2eedcc>, 'pylons.controller': <chezwam.controllers.page.PageController object at 0xa3352cc>, 'paste.evalexception': <weberror.evalexception.EvalException object at 0xa2eedcc>, 'wsgi.input': <socket._fileobject object at 0x99b166c length=0>, 'HTTP_HOST': '127.0.0.1:5000', 'beaker.session': {'_accessed_time': 1284950651.68098, '_creation_time': 1284950651.68098}, 'wsgi.multithread': True, 'routes.url': <routes.util.URLGenerator object at 0xa2f8e4c>, 'HTTP_ACCEPT': 'application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5', 'wsgi.version': (1, 0), 'paste.registry': <paste.registry.Registry object at 0xa2f642c>, 'wsgi.run_once': False, 'wsgi.errors': <paste.script.serve.LazyWriter object at 0x99beb4c>, 'wsgi.multiprocess': False, 'HTTP_ACCEPT_LANGUAGE': 'en-US,en;q=0.8', 'CONTENT_TYPE': '', 'paste.httpserver.thread_pool': <paste.httpserver.ThreadPool object at 0x99c43cc>, 'HTTP_ACCEPT_ENCODING': 'gzip,deflate,sdch'}
+22:44:11,686 INFO  [sqlalchemy.engine.base.Engine.0x...ec2c] SELECT nav.id AS nav_id, page.id AS page_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type, page.content AS page_content, page.posted AS page_posted, page.title AS page_title, page.heading AS page_heading 
+FROM nav JOIN page ON nav.id = page.id 
+WHERE nav.id = ?
+22:44:11,688 INFO  [sqlalchemy.engine.base.Engine.0x...ec2c] [6]
+22:44:11,696 INFO  [sqlalchemy.engine.base.Engine.0x...ec2c] SELECT count(1) AS count_1 
+FROM comment 
+WHERE comment.pageid = ?
+22:44:11,697 INFO  [sqlalchemy.engine.base.Engine.0x...ec2c] [u'6']
+22:44:11,702 INFO  [sqlalchemy.engine.base.Engine.0x...ec2c] SELECT tag.id AS tag_id, tag.name AS tag_name 
+FROM tag
+22:44:11,703 INFO  [sqlalchemy.engine.base.Engine.0x...ec2c] []
+22:44:11,708 INFO  [sqlalchemy.engine.base.Engine.0x...ec2c] SELECT tag.id AS tag_id, tag.name AS tag_name 
+FROM tag, pagetag 
+WHERE ? = pagetag.pageid AND tag.id = pagetag.tagid
+22:44:11,709 INFO  [sqlalchemy.engine.base.Engine.0x...ec2c] [6]
+Debug at: http://127.0.0.1:5000/_debug/view/1284950651
+/home/remix/dev/ChezWam/chezwam/config/routing.py changed; reloading...
+Traceback (most recent call last):
+  File "/usr/local/bin/paster", line 9, in <module>
+    load_entry_point('PasteScript==1.7.3', 'console_scripts', 'paster')()
+  File "/usr/local/lib/python2.6/dist-packages/PasteScript-1.7.3-py2.6.egg/paste/script/command.py", line 84, in run
+    invoke(command, command_name, options, args[1:])
+  File "/usr/local/lib/python2.6/dist-packages/PasteScript-1.7.3-py2.6.egg/paste/script/command.py", line 123, in invoke
+    exit_code = runner.run(args)
+  File "/usr/local/lib/python2.6/dist-packages/PasteScript-1.7.3-py2.6.egg/paste/script/command.py", line 218, in run
+    result = self.command()
+  File "/usr/local/lib/python2.6/dist-packages/PasteScript-1.7.3-py2.6.egg/paste/script/serve.py", line 276, in command
+    relative_to=base, global_conf=vars)
+  File "/usr/local/lib/python2.6/dist-packages/PasteScript-1.7.3-py2.6.egg/paste/script/serve.py", line 313, in loadapp
+    **kw)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 204, in loadapp
+    return loadobj(APP, uri, name=name, **kw)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 224, in loadobj
+    global_conf=global_conf)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 248, in loadcontext
+    global_conf=global_conf)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 278, in _loadconfig
+    return loader.get_context(object_type, name, global_conf)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 409, in get_context
+    section)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 431, in _context_from_use
+    object_type, name=use, global_conf=global_conf)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 361, in get_context
+    global_conf=global_conf)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 248, in loadcontext
+    global_conf=global_conf)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 285, in _loadegg
+    return loader.get_context(object_type, name, global_conf)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 561, in get_context
+    object_type, name=name)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 587, in find_egg_entry_point
+    possible.append((entry.load(), protocol, entry.name))
+  File "/usr/lib/python2.6/dist-packages/pkg_resources.py", line 1948, in load
+    entry = __import__(self.module_name, globals(),globals(), ['__name__'])
+  File "/home/remix/dev/ChezWam/chezwam/config/middleware.py", line 12, in <module>
+    from chezwam.config.environment import load_environment
+  File "/home/remix/dev/ChezWam/chezwam/config/environment.py", line 11, in <module>
+    from chezwam.config.routing import make_map
+  File "/home/remix/dev/ChezWam/chezwam/config/routing.py", line 55
+    result = {}
+              ^
+IndentationError: unindent does not match any outer indentation level
+Traceback (most recent call last):
+  File "/usr/local/bin/paster", line 9, in <module>
+    load_entry_point('PasteScript==1.7.3', 'console_scripts', 'paster')()
+  File "/usr/local/lib/python2.6/dist-packages/PasteScript-1.7.3-py2.6.egg/paste/script/command.py", line 84, in run
+    invoke(command, command_name, options, args[1:])
+  File "/usr/local/lib/python2.6/dist-packages/PasteScript-1.7.3-py2.6.egg/paste/script/command.py", line 123, in invoke
+    exit_code = runner.run(args)
+  File "/usr/local/lib/python2.6/dist-packages/PasteScript-1.7.3-py2.6.egg/paste/script/command.py", line 218, in run
+    result = self.command()
+  File "/usr/local/lib/python2.6/dist-packages/PasteScript-1.7.3-py2.6.egg/paste/script/serve.py", line 276, in command
+    relative_to=base, global_conf=vars)
+  File "/usr/local/lib/python2.6/dist-packages/PasteScript-1.7.3-py2.6.egg/paste/script/serve.py", line 313, in loadapp
+    **kw)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 204, in loadapp
+    return loadobj(APP, uri, name=name, **kw)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 224, in loadobj
+    global_conf=global_conf)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 248, in loadcontext
+    global_conf=global_conf)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 278, in _loadconfig
+    return loader.get_context(object_type, name, global_conf)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 409, in get_context
+    section)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 431, in _context_from_use
+    object_type, name=use, global_conf=global_conf)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 361, in get_context
+    global_conf=global_conf)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 248, in loadcontext
+    global_conf=global_conf)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 285, in _loadegg
+    return loader.get_context(object_type, name, global_conf)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 561, in get_context
+    object_type, name=name)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 587, in find_egg_entry_point
+    possible.append((entry.load(), protocol, entry.name))
+  File "/usr/lib/python2.6/dist-packages/pkg_resources.py", line 1948, in load
+    entry = __import__(self.module_name, globals(),globals(), ['__name__'])
+  File "/home/remix/dev/ChezWam/chezwam/config/middleware.py", line 12, in <module>
+    from chezwam.config.environment import load_environment
+  File "/home/remix/dev/ChezWam/chezwam/config/environment.py", line 11, in <module>
+    from chezwam.config.routing import make_map
+  File "/home/remix/dev/ChezWam/chezwam/config/routing.py", line 55
+    result = {}
+    ^
+IndentationError: unexpected indent
+Traceback (most recent call last):
+  File "/usr/local/bin/paster", line 9, in <module>
+    load_entry_point('PasteScript==1.7.3', 'console_scripts', 'paster')()
+  File "/usr/local/lib/python2.6/dist-packages/PasteScript-1.7.3-py2.6.egg/paste/script/command.py", line 84, in run
+    invoke(command, command_name, options, args[1:])
+  File "/usr/local/lib/python2.6/dist-packages/PasteScript-1.7.3-py2.6.egg/paste/script/command.py", line 123, in invoke
+    exit_code = runner.run(args)
+  File "/usr/local/lib/python2.6/dist-packages/PasteScript-1.7.3-py2.6.egg/paste/script/command.py", line 218, in run
+    result = self.command()
+  File "/usr/local/lib/python2.6/dist-packages/PasteScript-1.7.3-py2.6.egg/paste/script/serve.py", line 276, in command
+    relative_to=base, global_conf=vars)
+  File "/usr/local/lib/python2.6/dist-packages/PasteScript-1.7.3-py2.6.egg/paste/script/serve.py", line 313, in loadapp
+    **kw)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 204, in loadapp
+    return loadobj(APP, uri, name=name, **kw)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 224, in loadobj
+    global_conf=global_conf)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 248, in loadcontext
+    global_conf=global_conf)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 278, in _loadconfig
+    return loader.get_context(object_type, name, global_conf)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 409, in get_context
+    section)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 431, in _context_from_use
+    object_type, name=use, global_conf=global_conf)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 361, in get_context
+    global_conf=global_conf)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 248, in loadcontext
+    global_conf=global_conf)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 285, in _loadegg
+    return loader.get_context(object_type, name, global_conf)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 561, in get_context
+    object_type, name=name)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 587, in find_egg_entry_point
+    possible.append((entry.load(), protocol, entry.name))
+  File "/usr/lib/python2.6/dist-packages/pkg_resources.py", line 1948, in load
+    entry = __import__(self.module_name, globals(),globals(), ['__name__'])
+  File "/home/remix/dev/ChezWam/chezwam/config/middleware.py", line 12, in <module>
+    from chezwam.config.environment import load_environment
+  File "/home/remix/dev/ChezWam/chezwam/config/environment.py", line 11, in <module>
+    from chezwam.config.routing import make_map
+  File "/home/remix/dev/ChezWam/chezwam/config/routing.py", line 57
+    path_parts = path_info.split('/')
+                                    ^
+IndentationError: unindent does not match any outer indentation level
+Traceback (most recent call last):
+  File "/usr/local/bin/paster", line 9, in <module>
+    load_entry_point('PasteScript==1.7.3', 'console_scripts', 'paster')()
+  File "/usr/local/lib/python2.6/dist-packages/PasteScript-1.7.3-py2.6.egg/paste/script/command.py", line 84, in run
+    invoke(command, command_name, options, args[1:])
+  File "/usr/local/lib/python2.6/dist-packages/PasteScript-1.7.3-py2.6.egg/paste/script/command.py", line 123, in invoke
+    exit_code = runner.run(args)
+  File "/usr/local/lib/python2.6/dist-packages/PasteScript-1.7.3-py2.6.egg/paste/script/command.py", line 218, in run
+    result = self.command()
+  File "/usr/local/lib/python2.6/dist-packages/PasteScript-1.7.3-py2.6.egg/paste/script/serve.py", line 276, in command
+    relative_to=base, global_conf=vars)
+  File "/usr/local/lib/python2.6/dist-packages/PasteScript-1.7.3-py2.6.egg/paste/script/serve.py", line 313, in loadapp
+    **kw)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 204, in loadapp
+    return loadobj(APP, uri, name=name, **kw)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 224, in loadobj
+    global_conf=global_conf)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 248, in loadcontext
+    global_conf=global_conf)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 278, in _loadconfig
+    return loader.get_context(object_type, name, global_conf)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 409, in get_context
+    section)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 431, in _context_from_use
+    object_type, name=use, global_conf=global_conf)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 361, in get_context
+    global_conf=global_conf)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 248, in loadcontext
+    global_conf=global_conf)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 285, in _loadegg
+    return loader.get_context(object_type, name, global_conf)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 561, in get_context
+    object_type, name=name)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 587, in find_egg_entry_point
+    possible.append((entry.load(), protocol, entry.name))
+  File "/usr/lib/python2.6/dist-packages/pkg_resources.py", line 1948, in load
+    entry = __import__(self.module_name, globals(),globals(), ['__name__'])
+  File "/home/remix/dev/ChezWam/chezwam/config/middleware.py", line 12, in <module>
+    from chezwam.config.environment import load_environment
+  File "/home/remix/dev/ChezWam/chezwam/config/environment.py", line 11, in <module>
+    from chezwam.config.routing import make_map
+  File "/home/remix/dev/ChezWam/chezwam/config/routing.py", line 60
+    path_info += 'index'
+            ^
+IndentationError: expected an indented block
+Traceback (most recent call last):
+  File "/usr/local/bin/paster", line 9, in <module>
+    load_entry_point('PasteScript==1.7.3', 'console_scripts', 'paster')()
+  File "/usr/local/lib/python2.6/dist-packages/PasteScript-1.7.3-py2.6.egg/paste/script/command.py", line 84, in run
+    invoke(command, command_name, options, args[1:])
+  File "/usr/local/lib/python2.6/dist-packages/PasteScript-1.7.3-py2.6.egg/paste/script/command.py", line 123, in invoke
+    exit_code = runner.run(args)
+  File "/usr/local/lib/python2.6/dist-packages/PasteScript-1.7.3-py2.6.egg/paste/script/command.py", line 218, in run
+    result = self.command()
+  File "/usr/local/lib/python2.6/dist-packages/PasteScript-1.7.3-py2.6.egg/paste/script/serve.py", line 276, in command
+    relative_to=base, global_conf=vars)
+  File "/usr/local/lib/python2.6/dist-packages/PasteScript-1.7.3-py2.6.egg/paste/script/serve.py", line 313, in loadapp
+    **kw)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 204, in loadapp
+    return loadobj(APP, uri, name=name, **kw)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 224, in loadobj
+    global_conf=global_conf)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 248, in loadcontext
+    global_conf=global_conf)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 278, in _loadconfig
+    return loader.get_context(object_type, name, global_conf)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 409, in get_context
+    section)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 431, in _context_from_use
+    object_type, name=use, global_conf=global_conf)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 361, in get_context
+    global_conf=global_conf)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 248, in loadcontext
+    global_conf=global_conf)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 285, in _loadegg
+    return loader.get_context(object_type, name, global_conf)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 561, in get_context
+    object_type, name=name)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 587, in find_egg_entry_point
+    possible.append((entry.load(), protocol, entry.name))
+  File "/usr/lib/python2.6/dist-packages/pkg_resources.py", line 1948, in load
+    entry = __import__(self.module_name, globals(),globals(), ['__name__'])
+  File "/home/remix/dev/ChezWam/chezwam/config/middleware.py", line 12, in <module>
+    from chezwam.config.environment import load_environment
+  File "/home/remix/dev/ChezWam/chezwam/config/environment.py", line 11, in <module>
+    from chezwam.config.routing import make_map
+  File "/home/remix/dev/ChezWam/chezwam/config/routing.py", line 69
+    exception = NoSection('No section exists here')
+    ^
+IndentationError: expected an indented block
+Starting server in PID 10781.
+serving on http://127.0.0.1:5000
+22:50:44,897 INFO  [sqlalchemy.engine.base.Engine.0x...fd8c] BEGIN
+22:50:44,900 INFO  [sqlalchemy.engine.base.Engine.0x...fd8c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.type = ?
+22:50:44,900 INFO  [sqlalchemy.engine.base.Engine.0x...fd8c] ['section']
+22:50:44,908 WARNI [chezwam.controllers.page] {'routes.route': <routes.route.Route object at 0x8f7722c>, 'beaker.cache': <beaker.cache.CacheManager object at 0x8faff0c>, 'pylons.routes_dict': {'action': u'view', 'controller': u'page', 'id': u'6'}, 'beaker.get_session': <bound method SessionMiddleware._get_session of <beaker.middleware.SessionMiddleware object at 0x8fafecc>>, 'SCRIPT_NAME': '', 'webob.adhoc_attrs': {'language': 'en-us'}, 'REQUEST_METHOD': 'GET', 'PATH_INFO': '/page/view/6', 'SERVER_PROTOCOL': 'HTTP/1.1', 'QUERY_STRING': '', 'paste.throw_errors': True, 'pylons.action_method': <bound method PageController.view of <chezwam.controllers.page.PageController object at 0x900550c>>, 'CONTENT_LENGTH': '0', 'HTTP_ACCEPT_CHARSET': 'ISO-8859-1,utf-8;q=0.7,*;q=0.3', 'HTTP_USER_AGENT': 'Mozilla/5.0 (X11; U; Linux i686; en-US) AppleWebKit/533.4 (KHTML, like Gecko) Chrome/5.0.375.125 Safari/533.4', 'HTTP_CONNECTION': 'keep-alive', 'SERVER_NAME': '127.0.0.1', 'REMOTE_ADDR': '127.0.0.1', 'pylons.environ_config': {'session': 'beaker.session', 'cache': 'beaker.cache'}, 'pylons.pylons': <pylons.util.PylonsContext object at 0x8fcbe6c>, 'wsgi.url_scheme': 'http', 'wsgiorg.routing_args': (<routes.util.URLGenerator object at 0x8fbb84c>, {'action': u'view', 'controller': u'page', 'id': u'6'}), 'SERVER_PORT': '5000', 'weberror.evalexception': <weberror.evalexception.EvalException object at 0x8faff2c>, 'pylons.controller': <chezwam.controllers.page.PageController object at 0x900550c>, 'paste.evalexception': <weberror.evalexception.EvalException object at 0x8faff2c>, 'wsgi.input': <socket._fileobject object at 0x8fc286c length=0>, 'HTTP_HOST': '127.0.0.1:5000', 'beaker.session': {'_accessed_time': 1284951044.910537, '_creation_time': 1284951044.910537}, 'wsgi.multithread': True, 'HTTP_CACHE_CONTROL': 'max-age=0', 'routes.url': <routes.util.URLGenerator object at 0x8fbb84c>, 'HTTP_ACCEPT': 'application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5', 'wsgi.version': (1, 0), 'paste.registry': <paste.registry.Registry object at 0x8fc53ec>, 'wsgi.run_once': False, 'wsgi.errors': <paste.script.serve.LazyWriter object at 0x863eb2c>, 'wsgi.multiprocess': False, 'HTTP_ACCEPT_LANGUAGE': 'en-US,en;q=0.8', 'CONTENT_TYPE': '', 'paste.httpserver.thread_pool': <paste.httpserver.ThreadPool object at 0x864440c>, 'HTTP_ACCEPT_ENCODING': 'gzip,deflate,sdch'}
+22:50:44,915 INFO  [sqlalchemy.engine.base.Engine.0x...fd8c] SELECT nav.id AS nav_id, page.id AS page_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type, page.content AS page_content, page.posted AS page_posted, page.title AS page_title, page.heading AS page_heading 
+FROM nav JOIN page ON nav.id = page.id 
+WHERE nav.id = ?
+22:50:44,915 INFO  [sqlalchemy.engine.base.Engine.0x...fd8c] [6]
+22:50:44,923 INFO  [sqlalchemy.engine.base.Engine.0x...fd8c] SELECT count(1) AS count_1 
+FROM comment 
+WHERE comment.pageid = ?
+22:50:44,923 INFO  [sqlalchemy.engine.base.Engine.0x...fd8c] [u'6']
+22:50:44,926 INFO  [sqlalchemy.engine.base.Engine.0x...fd8c] SELECT tag.id AS tag_id, tag.name AS tag_name 
+FROM tag
+22:50:44,927 INFO  [sqlalchemy.engine.base.Engine.0x...fd8c] []
+22:50:44,931 INFO  [sqlalchemy.engine.base.Engine.0x...fd8c] SELECT tag.id AS tag_id, tag.name AS tag_name 
+FROM tag, pagetag 
+WHERE ? = pagetag.pageid AND tag.id = pagetag.tagid
+22:50:44,931 INFO  [sqlalchemy.engine.base.Engine.0x...fd8c] [6]
+Debug at: http://127.0.0.1:5000/_debug/view/1284951044
+/home/remix/dev/ChezWam/chezwam/config/routing.py changed; reloading...
+Starting server in PID 10799.
+serving on http://127.0.0.1:5000
+/home/remix/dev/ChezWam/chezwam/config/routing.py changed; reloading...
+Traceback (most recent call last):
+  File "/usr/local/bin/paster", line 9, in <module>
+    load_entry_point('PasteScript==1.7.3', 'console_scripts', 'paster')()
+  File "/usr/local/lib/python2.6/dist-packages/PasteScript-1.7.3-py2.6.egg/paste/script/command.py", line 84, in run
+    invoke(command, command_name, options, args[1:])
+  File "/usr/local/lib/python2.6/dist-packages/PasteScript-1.7.3-py2.6.egg/paste/script/command.py", line 123, in invoke
+    exit_code = runner.run(args)
+  File "/usr/local/lib/python2.6/dist-packages/PasteScript-1.7.3-py2.6.egg/paste/script/command.py", line 218, in run
+    result = self.command()
+  File "/usr/local/lib/python2.6/dist-packages/PasteScript-1.7.3-py2.6.egg/paste/script/serve.py", line 276, in command
+    relative_to=base, global_conf=vars)
+  File "/usr/local/lib/python2.6/dist-packages/PasteScript-1.7.3-py2.6.egg/paste/script/serve.py", line 313, in loadapp
+    **kw)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 204, in loadapp
+    return loadobj(APP, uri, name=name, **kw)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 224, in loadobj
+    global_conf=global_conf)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 248, in loadcontext
+    global_conf=global_conf)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 278, in _loadconfig
+    return loader.get_context(object_type, name, global_conf)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 409, in get_context
+    section)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 431, in _context_from_use
+    object_type, name=use, global_conf=global_conf)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 361, in get_context
+    global_conf=global_conf)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 248, in loadcontext
+    global_conf=global_conf)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 285, in _loadegg
+    return loader.get_context(object_type, name, global_conf)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 561, in get_context
+    object_type, name=name)
+  File "/usr/local/lib/python2.6/dist-packages/PasteDeploy-1.3.3-py2.6.egg/paste/deploy/loadwsgi.py", line 587, in find_egg_entry_point
+    possible.append((entry.load(), protocol, entry.name))
+  File "/usr/lib/python2.6/dist-packages/pkg_resources.py", line 1948, in load
+    entry = __import__(self.module_name, globals(),globals(), ['__name__'])
+  File "/home/remix/dev/ChezWam/chezwam/config/middleware.py", line 12, in <module>
+    from chezwam.config.environment import load_environment
+  File "/home/remix/dev/ChezWam/chezwam/config/environment.py", line 11, in <module>
+    from chezwam.config.routing import make_map
+  File "/home/remix/dev/ChezWam/chezwam/config/routing.py", line 16
+    log.error(result)
+    ^
+IndentationError: unexpected indent
+Starting server in PID 10817.
+serving on http://127.0.0.1:5000
+22:53:32,088 INFO  [sqlalchemy.engine.base.Engine.0x...ae0c] BEGIN
+22:53:32,091 INFO  [sqlalchemy.engine.base.Engine.0x...ae0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.type = ?
+22:53:32,091 INFO  [sqlalchemy.engine.base.Engine.0x...ae0c] ['section']
+22:53:32,098 WARNI [chezwam.controllers.page] {'routes.route': <routes.route.Route object at 0x92722ac>, 'beaker.cache': <beaker.cache.CacheManager object at 0x92aaf8c>, 'pylons.routes_dict': {'action': u'view', 'controller': u'page', 'id': u'6'}, 'beaker.get_session': <bound method SessionMiddleware._get_session of <beaker.middleware.SessionMiddleware object at 0x92aaf4c>>, 'SCRIPT_NAME': '', 'webob.adhoc_attrs': {'language': 'en-us'}, 'REQUEST_METHOD': 'GET', 'PATH_INFO': '/page/view/6', 'SERVER_PROTOCOL': 'HTTP/1.1', 'QUERY_STRING': '', 'paste.throw_errors': True, 'pylons.action_method': <bound method PageController.view of <chezwam.controllers.page.PageController object at 0x92eb58c>>, 'CONTENT_LENGTH': '0', 'HTTP_ACCEPT_CHARSET': 'ISO-8859-1,utf-8;q=0.7,*;q=0.3', 'HTTP_USER_AGENT': 'Mozilla/5.0 (X11; U; Linux i686; en-US) AppleWebKit/533.4 (KHTML, like Gecko) Chrome/5.0.375.125 Safari/533.4', 'HTTP_CONNECTION': 'keep-alive', 'SERVER_NAME': '127.0.0.1', 'REMOTE_ADDR': '127.0.0.1', 'pylons.environ_config': {'session': 'beaker.session', 'cache': 'beaker.cache'}, 'pylons.pylons': <pylons.util.PylonsContext object at 0x92c6eec>, 'wsgi.url_scheme': 'http', 'wsgiorg.routing_args': (<routes.util.URLGenerator object at 0x92b68cc>, {'action': u'view', 'controller': u'page', 'id': u'6'}), 'SERVER_PORT': '5000', 'weberror.evalexception': <weberror.evalexception.EvalException object at 0x92aafac>, 'pylons.controller': <chezwam.controllers.page.PageController object at 0x92eb58c>, 'paste.evalexception': <weberror.evalexception.EvalException object at 0x92aafac>, 'wsgi.input': <socket._fileobject object at 0x92be82c length=0>, 'HTTP_HOST': '127.0.0.1:5000', 'beaker.session': {'_accessed_time': 1284951212.0997939, '_creation_time': 1284951212.0997939}, 'wsgi.multithread': True, 'HTTP_CACHE_CONTROL': 'max-age=0', 'routes.url': <routes.util.URLGenerator object at 0x92b68cc>, 'HTTP_ACCEPT': 'application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5', 'wsgi.version': (1, 0), 'paste.registry': <paste.registry.Registry object at 0x92c046c>, 'wsgi.run_once': False, 'wsgi.errors': <paste.script.serve.LazyWriter object at 0x893ab4c>, 'wsgi.multiprocess': False, 'HTTP_ACCEPT_LANGUAGE': 'en-US,en;q=0.8', 'CONTENT_TYPE': '', 'paste.httpserver.thread_pool': <paste.httpserver.ThreadPool object at 0x894040c>, 'HTTP_ACCEPT_ENCODING': 'gzip,deflate,sdch'}
+22:53:32,105 INFO  [sqlalchemy.engine.base.Engine.0x...ae0c] SELECT nav.id AS nav_id, page.id AS page_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type, page.content AS page_content, page.posted AS page_posted, page.title AS page_title, page.heading AS page_heading 
+FROM nav JOIN page ON nav.id = page.id 
+WHERE nav.id = ?
+22:53:32,105 INFO  [sqlalchemy.engine.base.Engine.0x...ae0c] [6]
+22:53:32,112 INFO  [sqlalchemy.engine.base.Engine.0x...ae0c] SELECT count(1) AS count_1 
+FROM comment 
+WHERE comment.pageid = ?
+22:53:32,112 INFO  [sqlalchemy.engine.base.Engine.0x...ae0c] [u'6']
+22:53:32,116 INFO  [sqlalchemy.engine.base.Engine.0x...ae0c] SELECT tag.id AS tag_id, tag.name AS tag_name 
+FROM tag
+22:53:32,116 INFO  [sqlalchemy.engine.base.Engine.0x...ae0c] []
+22:53:32,120 INFO  [sqlalchemy.engine.base.Engine.0x...ae0c] SELECT tag.id AS tag_id, tag.name AS tag_name 
+FROM tag, pagetag 
+WHERE ? = pagetag.pageid AND tag.id = pagetag.tagid
+22:53:32,121 INFO  [sqlalchemy.engine.base.Engine.0x...ae0c] [6]
+Debug at: http://127.0.0.1:5000/_debug/view/1284951212
+/home/remix/dev/ChezWam/chezwam/controllers/page.pyc changed; reloading...
+Starting server in PID 10830.
+serving on http://127.0.0.1:5000
+22:54:10,727 INFO  [sqlalchemy.engine.base.Engine.0x...ce0c] BEGIN
+22:54:10,730 INFO  [sqlalchemy.engine.base.Engine.0x...ce0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.type = ?
+22:54:10,732 INFO  [sqlalchemy.engine.base.Engine.0x...ce0c] ['section']
+22:54:10,748 INFO  [sqlalchemy.engine.base.Engine.0x...ce0c] SELECT nav.id AS nav_id, page.id AS page_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type, page.content AS page_content, page.posted AS page_posted, page.title AS page_title, page.heading AS page_heading 
+FROM nav JOIN page ON nav.id = page.id 
+WHERE nav.id = ?
+22:54:10,748 INFO  [sqlalchemy.engine.base.Engine.0x...ce0c] [6]
+22:54:10,757 INFO  [sqlalchemy.engine.base.Engine.0x...ce0c] SELECT count(1) AS count_1 
+FROM comment 
+WHERE comment.pageid = ?
+22:54:10,758 INFO  [sqlalchemy.engine.base.Engine.0x...ce0c] [u'6']
+22:54:10,761 INFO  [sqlalchemy.engine.base.Engine.0x...ce0c] SELECT tag.id AS tag_id, tag.name AS tag_name 
+FROM tag
+22:54:10,761 INFO  [sqlalchemy.engine.base.Engine.0x...ce0c] []
+22:54:10,765 INFO  [sqlalchemy.engine.base.Engine.0x...ce0c] SELECT tag.id AS tag_id, tag.name AS tag_name 
+FROM tag, pagetag 
+WHERE ? = pagetag.pageid AND tag.id = pagetag.tagid
+22:54:10,766 INFO  [sqlalchemy.engine.base.Engine.0x...ce0c] [6]
+Debug at: http://127.0.0.1:5000/_debug/view/1284951250
+22:54:29,946 ERROR [chezwam.config.routing] {}
+/index
+22:54:29,952 INFO  [sqlalchemy.engine.base.Engine.0x...ce0c] BEGIN
+22:54:29,955 INFO  [sqlalchemy.engine.base.Engine.0x...ce0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.path = ? AND nav.type = ? 
+ LIMIT 1 OFFSET 0
+22:54:29,955 INFO  [sqlalchemy.engine.base.Engine.0x...ce0c] [u'', 'section']
+22:54:29,965 INFO  [sqlalchemy.engine.base.Engine.0x...ce0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.path = ? AND nav.section = ? AND nav.type = ? 
+ LIMIT 1 OFFSET 0
+22:54:29,973 INFO  [sqlalchemy.engine.base.Engine.0x...ce0c] [u'index', 1, 'page']
+22:54:29,982 INFO  [sqlalchemy.engine.base.Engine.0x...ce0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.section = ? ORDER BY nav."before" DESC
+22:54:29,983 INFO  [sqlalchemy.engine.base.Engine.0x...ce0c] [1]
+22:54:30,000 INFO  [sqlalchemy.engine.base.Engine.0x...ce0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.section = ? ORDER BY nav."before" DESC
+22:54:30,001 INFO  [sqlalchemy.engine.base.Engine.0x...ce0c] [1]
+22:54:30,016 INFO  [sqlalchemy.engine.base.Engine.0x...ce0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.type = ?
+22:54:30,017 INFO  [sqlalchemy.engine.base.Engine.0x...ce0c] ['section']
+22:54:30,027 INFO  [sqlalchemy.engine.base.Engine.0x...ce0c] SELECT count(1) AS count_1 
+FROM comment 
+WHERE comment.pageid = ?
+22:54:30,027 INFO  [sqlalchemy.engine.base.Engine.0x...ce0c] [6]
+22:54:30,032 INFO  [sqlalchemy.engine.base.Engine.0x...ce0c] SELECT tag.id AS tag_id, tag.name AS tag_name 
+FROM tag
+22:54:30,033 INFO  [sqlalchemy.engine.base.Engine.0x...ce0c] []
+22:54:30,038 INFO  [sqlalchemy.engine.base.Engine.0x...ce0c] SELECT tag.id AS tag_id, tag.name AS tag_name 
+FROM tag, pagetag 
+WHERE ? = pagetag.pageid AND tag.id = pagetag.tagid
+22:54:30,039 INFO  [sqlalchemy.engine.base.Engine.0x...ce0c] [6]
+22:54:30,265 INFO  [sqlalchemy.engine.base.Engine.0x...ce0c] SELECT page.title AS page_title, page.heading AS page_heading, page.content AS page_content, page.posted AS page_posted 
+FROM page 
+WHERE ? = page.id
+22:54:30,266 INFO  [sqlalchemy.engine.base.Engine.0x...ce0c] [6]
+/home/remix/dev/ChezWam/chezwam/config/routing.pyc changed; reloading...
+Starting server in PID 10845.
+serving on http://127.0.0.1:5000
+22:55:22,513 ERROR [chezwam.config.routing] Debug result variable: {}
+/index
+22:55:22,532 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] BEGIN
+22:55:22,534 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.path = ? AND nav.type = ? 
+ LIMIT 1 OFFSET 0
+22:55:22,538 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] [u'', 'section']
+22:55:22,546 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.path = ? AND nav.section = ? AND nav.type = ? 
+ LIMIT 1 OFFSET 0
+22:55:22,547 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] [u'index', 1, 'page']
+22:55:22,555 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.section = ? ORDER BY nav."before" DESC
+22:55:22,556 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] [1]
+22:55:22,573 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.section = ? ORDER BY nav."before" DESC
+22:55:22,573 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] [1]
+22:55:22,780 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.type = ?
+22:55:22,781 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] ['section']
+22:55:22,788 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] SELECT count(1) AS count_1 
+FROM comment 
+WHERE comment.pageid = ?
+22:55:22,789 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] [6]
+22:55:22,792 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] SELECT tag.id AS tag_id, tag.name AS tag_name 
+FROM tag
+22:55:22,792 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] []
+22:55:22,797 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] SELECT tag.id AS tag_id, tag.name AS tag_name 
+FROM tag, pagetag 
+WHERE ? = pagetag.pageid AND tag.id = pagetag.tagid
+22:55:22,797 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] [6]
+22:55:22,809 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] SELECT page.title AS page_title, page.heading AS page_heading, page.content AS page_content, page.posted AS page_posted 
+FROM page 
+WHERE ? = page.id
+22:55:22,809 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] [6]
+22:55:54,990 ERROR [chezwam.config.routing] Debug result variable: {}
+/index
+22:55:54,995 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] BEGIN
+22:55:54,999 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.path = ? AND nav.type = ? 
+ LIMIT 1 OFFSET 0
+22:55:55,000 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] [u'', 'section']
+22:55:55,012 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.path = ? AND nav.section = ? AND nav.type = ? 
+ LIMIT 1 OFFSET 0
+22:55:55,013 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] [u'index', 1, 'page']
+22:55:55,022 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.section = ? ORDER BY nav."before" DESC
+22:55:55,023 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] [1]
+22:55:55,035 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.section = ? ORDER BY nav."before" DESC
+22:55:55,035 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] [1]
+22:55:55,048 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.type = ?
+22:55:55,049 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] ['section']
+22:55:55,055 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] SELECT count(1) AS count_1 
+FROM comment 
+WHERE comment.pageid = ?
+22:55:55,055 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] [6]
+22:55:55,058 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] SELECT tag.id AS tag_id, tag.name AS tag_name 
+FROM tag
+22:55:55,058 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] []
+22:55:55,062 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] SELECT tag.id AS tag_id, tag.name AS tag_name 
+FROM tag, pagetag 
+WHERE ? = pagetag.pageid AND tag.id = pagetag.tagid
+22:55:55,063 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] [6]
+22:55:55,068 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] SELECT page.title AS page_title, page.heading AS page_heading, page.content AS page_content, page.posted AS page_posted 
+FROM page 
+WHERE ? = page.id
+22:55:55,071 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] [6]
+22:56:09,775 ERROR [chezwam.config.routing] Debug result variable: {}
+/dev/svn
+22:56:09,779 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] BEGIN
+22:56:09,782 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.path = ? AND nav.type = ? 
+ LIMIT 1 OFFSET 0
+22:56:09,782 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] [u'', 'section']
+22:56:09,792 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.path = ? AND nav.type = ? 
+ LIMIT 1 OFFSET 0
+22:56:09,792 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] [u'dev', 'section']
+22:56:09,801 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.path = ? AND nav.section = ? AND nav.type = ? 
+ LIMIT 1 OFFSET 0
+22:56:09,801 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] [u'svn', 3, 'page']
+22:56:09,810 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.section = ? ORDER BY nav."before" DESC
+22:56:09,810 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] [3]
+22:56:09,822 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.section = ? ORDER BY nav."before" DESC
+22:56:09,823 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] [1]
+22:56:09,835 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.type = ?
+22:56:09,836 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] ['section']
+22:56:09,844 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] SELECT count(1) AS count_1 
+FROM comment 
+WHERE comment.pageid = ?
+22:56:09,844 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] [4]
+22:56:09,849 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] SELECT tag.id AS tag_id, tag.name AS tag_name 
+FROM tag
+22:56:09,849 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] []
+22:56:09,857 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] SELECT tag.id AS tag_id, tag.name AS tag_name 
+FROM tag, pagetag 
+WHERE ? = pagetag.pageid AND tag.id = pagetag.tagid
+22:56:09,858 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] [4]
+22:56:09,867 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] SELECT page.title AS page_title, page.heading AS page_heading, page.content AS page_content, page.posted AS page_posted 
+FROM page 
+WHERE ? = page.id
+22:56:09,867 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] [4]
+22:56:17,827 ERROR [chezwam.config.routing] Debug result variable: {}
+/dev
+22:56:17,831 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] BEGIN
+22:56:17,837 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.path = ? AND nav.type = ? 
+ LIMIT 1 OFFSET 0
+22:56:17,838 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] [u'', 'section']
+22:56:17,848 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.path = ? AND nav.section = ? AND nav.type = ? 
+ LIMIT 1 OFFSET 0
+22:56:17,848 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] [u'dev', 1, 'page']
+Debug at: http://127.0.0.1:5000/_debug/view/1284951377
+22:56:29,878 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] BEGIN
+22:56:29,881 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.type = ?
+22:56:29,881 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] ['section']
+22:56:29,894 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] SELECT nav.id AS nav_id, page.id AS page_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type, page.content AS page_content, page.posted AS page_posted, page.title AS page_title, page.heading AS page_heading 
+FROM nav JOIN page ON nav.id = page.id 
+WHERE nav.id = ?
+22:56:29,895 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] [6]
+22:56:29,903 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] SELECT count(1) AS count_1 
+FROM comment 
+WHERE comment.pageid = ?
+22:56:29,904 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] [u'6']
+22:56:29,908 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] SELECT tag.id AS tag_id, tag.name AS tag_name 
+FROM tag
+22:56:29,909 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] []
+22:56:29,915 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] SELECT tag.id AS tag_id, tag.name AS tag_name 
+FROM tag, pagetag 
+WHERE ? = pagetag.pageid AND tag.id = pagetag.tagid
+22:56:29,915 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] [6]
+Debug at: http://127.0.0.1:5000/_debug/view/1284951378
+22:56:39,276 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] BEGIN
+22:56:39,279 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.type = ?
+22:56:39,279 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] ['section']
+22:56:39,302 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] SELECT nav.id AS nav_id, page.id AS page_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type, page.content AS page_content, page.posted AS page_posted, page.title AS page_title, page.heading AS page_heading 
+FROM nav JOIN page ON nav.id = page.id 
+WHERE nav.id = ?
+22:56:39,302 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] [6]
+22:56:39,311 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] SELECT count(1) AS count_1 
+FROM comment 
+WHERE comment.pageid = ?
+22:56:39,312 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] [u'6']
+22:56:39,320 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] SELECT tag.id AS tag_id, tag.name AS tag_name 
+FROM tag
+22:56:39,320 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] []
+22:56:39,324 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] SELECT tag.id AS tag_id, tag.name AS tag_name 
+FROM tag, pagetag 
+WHERE ? = pagetag.pageid AND tag.id = pagetag.tagid
+22:56:39,324 INFO  [sqlalchemy.engine.base.Engine.0x...7d2c] [6]
+Debug at: http://127.0.0.1:5000/_debug/view/1284951379
+/home/remix/dev/ChezWam/chezwam/config/routing.py changed; reloading...
+Starting server in PID 10876.
+serving on http://127.0.0.1:5000
+23:01:12,783 ERROR [chezwam.config.routing] Debug result variable: {}
+23:01:12,817 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] BEGIN
+23:01:12,821 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.path = ? AND nav.type = ? 
+ LIMIT 1 OFFSET 0
+23:01:12,822 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] [u'', 'section']
+23:01:12,834 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.path = ? AND nav.section = ? AND nav.type = ? 
+ LIMIT 1 OFFSET 0
+23:01:12,834 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] [u'index', 1, 'page']
+23:01:12,842 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.section = ? ORDER BY nav."before" DESC
+23:01:12,842 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] [1]
+23:01:12,851 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.section = ? ORDER BY nav."before" DESC
+23:01:12,851 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] [1]
+23:01:13,070 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.type = ?
+23:01:13,071 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] ['section']
+23:01:13,077 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] SELECT count(1) AS count_1 
+FROM comment 
+WHERE comment.pageid = ?
+23:01:13,078 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] [6]
+23:01:13,081 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] SELECT tag.id AS tag_id, tag.name AS tag_name 
+FROM tag
+23:01:13,081 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] []
+23:01:13,087 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] SELECT tag.id AS tag_id, tag.name AS tag_name 
+FROM tag, pagetag 
+WHERE ? = pagetag.pageid AND tag.id = pagetag.tagid
+23:01:13,088 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] [6]
+23:01:13,100 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] SELECT page.title AS page_title, page.heading AS page_heading, page.content AS page_content, page.posted AS page_posted 
+FROM page 
+WHERE ? = page.id
+23:01:13,100 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] [6]
+23:01:37,603 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] BEGIN
+23:01:37,605 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.type = ? AND nav.id != ?
+23:01:37,606 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] ['section', 1]
+23:01:37,616 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] SELECT nav.id AS nav_id, section.id AS section_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav JOIN section ON nav.id = section.id 
+WHERE nav.id = ? 
+ LIMIT 1 OFFSET 0
+23:01:37,617 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] [u'1']
+Debug at: http://127.0.0.1:5000/_debug/view/1284951697
+23:01:37,809 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] BEGIN
+23:01:37,813 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.type = ? AND nav.id != ?
+23:01:37,820 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] ['section', 1]
+23:01:37,843 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] SELECT nav.id AS nav_id, section.id AS section_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav JOIN section ON nav.id = section.id 
+WHERE nav.id = ? 
+ LIMIT 1 OFFSET 0
+23:01:37,846 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] [u'1']
+Debug at: http://127.0.0.1:5000/_debug/view/1284951698
+23:01:44,357 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] BEGIN
+23:01:44,360 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.type = ? AND nav.id != ?
+23:01:44,360 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] ['section', 1]
+23:01:44,368 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] SELECT nav.id AS nav_id, section.id AS section_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav JOIN section ON nav.id = section.id 
+WHERE nav.id = ? 
+ LIMIT 1 OFFSET 0
+23:01:44,369 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] [u'1']
+/usr/local/lib/python2.6/dist-packages/SQLAlchemy-0.5.8-py2.6.egg/sqlalchemy/engine/default.py:230: SAWarning: Unicode type received non-unicode bind param value 'index'
+  param.append(processors[key](compiled_params[key]))
+23:01:44,385 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.section = ? AND nav.type = ? AND nav.path != ? 
+ LIMIT 1 OFFSET 0
+23:01:44,385 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] [u'1', 'section', 'index']
+Debug at: http://127.0.0.1:5000/_debug/view/1284951699
+23:01:50,157 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] BEGIN
+23:01:50,160 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.type = ?
+23:01:50,161 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] ['section']
+Debug at: http://127.0.0.1:5000/_debug/view/1284951700
+23:01:55,718 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] BEGIN
+23:01:55,721 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.type = ?
+23:01:55,722 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] ['section']
+Debug at: http://127.0.0.1:5000/_debug/view/1284951701
+23:02:02,996 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] BEGIN
+23:02:02,997 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] SELECT count(1) AS count_1 
+FROM tag
+23:02:02,998 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] []
+Debug at: http://127.0.0.1:5000/_debug/view/1284951702
+Debug at: http://127.0.0.1:5000/_debug/view/1284951703
+23:03:23,743 ERROR [chezwam.config.routing] Debug result variable: {}
+23:03:23,747 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] BEGIN
+23:03:23,754 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.path = ? AND nav.type = ? 
+ LIMIT 1 OFFSET 0
+23:03:23,755 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] [u'', 'section']
+23:03:23,765 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.path = ? AND nav.section = ? AND nav.type = ? 
+ LIMIT 1 OFFSET 0
+23:03:23,766 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] [u'blog', 1, 'page']
+23:03:23,776 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.section = ? ORDER BY nav."before" DESC
+23:03:23,777 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] [1]
+23:03:23,791 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.section = ? ORDER BY nav."before" DESC
+23:03:23,791 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] [1]
+23:03:23,799 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.type = ?
+23:03:23,800 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] ['section']
+23:03:23,806 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] SELECT count(1) AS count_1 
+FROM comment 
+WHERE comment.pageid = ?
+23:03:23,807 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] [9]
+23:03:23,809 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] SELECT tag.id AS tag_id, tag.name AS tag_name 
+FROM tag
+23:03:23,813 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] []
+23:03:23,819 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] SELECT tag.id AS tag_id, tag.name AS tag_name 
+FROM tag, pagetag 
+WHERE ? = pagetag.pageid AND tag.id = pagetag.tagid
+23:03:23,820 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] [9]
+23:03:23,828 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] SELECT page.title AS page_title, page.heading AS page_heading, page.content AS page_content, page.posted AS page_posted 
+FROM page 
+WHERE ? = page.id
+23:03:23,829 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] [9]
+23:03:31,107 ERROR [chezwam.config.routing] Debug result variable: {}
+23:03:31,111 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] BEGIN
+23:03:31,115 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.path = ? AND nav.type = ? 
+ LIMIT 1 OFFSET 0
+23:03:31,115 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] [u'', 'section']
+23:03:31,124 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.path = ? AND nav.type = ? 
+ LIMIT 1 OFFSET 0
+23:03:31,125 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] [u'dev', 'section']
+23:03:31,139 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.path = ? AND nav.section = ? AND nav.type = ? 
+ LIMIT 1 OFFSET 0
+23:03:31,140 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] [u'svn', 3, 'page']
+23:03:31,148 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.section = ? ORDER BY nav."before" DESC
+23:03:31,149 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] [3]
+23:03:31,160 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.section = ? ORDER BY nav."before" DESC
+23:03:31,161 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] [1]
+23:03:31,176 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.type = ?
+23:03:31,176 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] ['section']
+23:03:31,185 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] SELECT count(1) AS count_1 
+FROM comment 
+WHERE comment.pageid = ?
+23:03:31,185 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] [4]
+23:03:31,190 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] SELECT tag.id AS tag_id, tag.name AS tag_name 
+FROM tag
+23:03:31,191 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] []
+23:03:31,199 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] SELECT tag.id AS tag_id, tag.name AS tag_name 
+FROM tag, pagetag 
+WHERE ? = pagetag.pageid AND tag.id = pagetag.tagid
+23:03:31,199 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] [4]
+23:03:31,208 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] SELECT page.title AS page_title, page.heading AS page_heading, page.content AS page_content, page.posted AS page_posted 
+FROM page 
+WHERE ? = page.id
+23:03:31,208 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] [4]
+23:03:36,588 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] BEGIN
+23:03:36,591 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.type = ?
+23:03:36,592 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] ['section']
+23:03:36,604 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] SELECT nav.id AS nav_id, page.id AS page_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type, page.content AS page_content, page.posted AS page_posted, page.title AS page_title, page.heading AS page_heading 
+FROM nav JOIN page ON nav.id = page.id
+23:03:36,605 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] []
+Debug at: http://127.0.0.1:5000/_debug/view/1284951704
+23:05:43,575 ERROR [chezwam.config.routing] Debug result variable: {}
+23:05:43,593 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] BEGIN
+23:05:43,597 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.path = ? AND nav.type = ? 
+ LIMIT 1 OFFSET 0
+23:05:43,598 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] [u'', 'section']
+23:05:43,629 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.path = ? AND nav.type = ? 
+ LIMIT 1 OFFSET 0
+23:05:43,629 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] [u'blog', 'section']
+23:05:52,592 ERROR [chezwam.config.routing] Debug result variable: {}
+23:05:52,598 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] BEGIN
+23:05:52,602 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.path = ? AND nav.type = ? 
+ LIMIT 1 OFFSET 0
+23:05:52,602 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] [u'', 'section']
+23:05:52,610 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.path = ? AND nav.type = ? 
+ LIMIT 1 OFFSET 0
+23:05:52,612 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] [u'dev', 'section']
+23:05:52,627 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.path = ? AND nav.section = ? AND nav.type = ? 
+ LIMIT 1 OFFSET 0
+23:05:52,628 INFO  [sqlalchemy.engine.base.Engine.0x...8e0c] [u'new-website-on-pylons', 3, 'page']
+Debug at: http://127.0.0.1:5000/_debug/view/1284951705
+/home/remix/dev/ChezWam/chezwam/lib/helpers.pyc changed; reloading...
+Starting server in PID 10909.
+serving on http://127.0.0.1:5000
+23:09:20,920 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] BEGIN
+23:09:20,923 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT nav.id AS nav_id, page.id AS page_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type, page.content AS page_content, page.posted AS page_posted, page.title AS page_title, page.heading AS page_heading 
+FROM nav JOIN page ON nav.id = page.id 
+WHERE nav.id = ? 
+ LIMIT 1 OFFSET 0
+23:09:20,924 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] [4]
+Debug at: http://127.0.0.1:5000/_debug/view/1284952161
+23:10:40,757 ERROR [chezwam.config.routing] Debug result variable: {}
+23:10:40,762 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] BEGIN
+23:10:40,766 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.path = ? AND nav.type = ? 
+ LIMIT 1 OFFSET 0
+23:10:40,766 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] [u'', 'section']
+23:10:40,789 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.path = ? AND nav.section = ? AND nav.type = ? 
+ LIMIT 1 OFFSET 0
+23:10:40,790 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] [u'index', 1, 'page']
+23:10:40,799 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.section = ? ORDER BY nav."before" DESC
+23:10:40,800 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] [1]
+23:10:40,810 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.section = ? ORDER BY nav."before" DESC
+23:10:40,811 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] [1]
+23:10:40,841 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.type = ?
+23:10:40,842 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] ['section']
+23:10:40,850 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT count(1) AS count_1 
+FROM comment 
+WHERE comment.pageid = ?
+23:10:40,851 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] [6]
+23:10:40,855 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT tag.id AS tag_id, tag.name AS tag_name 
+FROM tag
+23:10:40,855 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] []
+23:10:40,860 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT tag.id AS tag_id, tag.name AS tag_name 
+FROM tag, pagetag 
+WHERE ? = pagetag.pageid AND tag.id = pagetag.tagid
+23:10:40,861 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] [6]
+23:10:40,868 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT page.title AS page_title, page.heading AS page_heading, page.content AS page_content, page.posted AS page_posted 
+FROM page 
+WHERE ? = page.id
+23:10:40,868 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] [6]
+23:10:43,985 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] BEGIN
+23:10:43,988 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.type = ?
+23:10:43,989 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] ['section']
+Debug at: http://127.0.0.1:5000/_debug/view/1284952162
+23:11:24,469 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] BEGIN
+23:11:24,471 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.type = ?
+23:11:24,472 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] ['section']
+23:11:31,431 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] BEGIN
+23:11:31,434 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.type = ?
+23:11:31,435 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] ['section']
+Debug at: http://127.0.0.1:5000/_debug/view/1284952163
+23:12:40,600 ERROR [chezwam.config.routing] Debug result variable: {}
+23:12:40,608 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] BEGIN
+23:12:40,617 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.path = ? AND nav.type = ? 
+ LIMIT 1 OFFSET 0
+23:12:40,617 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] [u'', 'section']
+23:12:40,636 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.path = ? AND nav.section = ? AND nav.type = ? 
+ LIMIT 1 OFFSET 0
+23:12:40,637 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] [u'index', 1, 'page']
+23:12:40,654 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.section = ? ORDER BY nav."before" DESC
+23:12:40,655 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] [1]
+23:12:40,680 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.section = ? ORDER BY nav."before" DESC
+23:12:40,680 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] [1]
+23:12:40,699 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.type = ?
+23:12:40,700 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] ['section']
+23:12:40,707 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT count(1) AS count_1 
+FROM comment 
+WHERE comment.pageid = ?
+23:12:40,708 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] [6]
+23:12:40,712 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT tag.id AS tag_id, tag.name AS tag_name 
+FROM tag
+23:12:40,713 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] []
+23:12:40,717 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT tag.id AS tag_id, tag.name AS tag_name 
+FROM tag, pagetag 
+WHERE ? = pagetag.pageid AND tag.id = pagetag.tagid
+23:12:40,718 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] [6]
+23:12:40,727 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT page.title AS page_title, page.heading AS page_heading, page.content AS page_content, page.posted AS page_posted 
+FROM page 
+WHERE ? = page.id
+23:12:40,727 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] [6]
+Debug at: http://127.0.0.1:5000/_debug/view/1284952164
+23:16:27,421 ERROR [chezwam.config.routing] Debug result variable: {}
+23:16:27,425 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] BEGIN
+23:16:27,428 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.path = ? AND nav.type = ? 
+ LIMIT 1 OFFSET 0
+23:16:27,429 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] [u'', 'section']
+23:16:27,437 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.path = ? AND nav.section = ? AND nav.type = ? 
+ LIMIT 1 OFFSET 0
+23:16:27,438 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] [u'index', 1, 'page']
+23:16:27,446 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.section = ? ORDER BY nav."before" DESC
+23:16:27,447 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] [1]
+23:16:27,460 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.section = ? ORDER BY nav."before" DESC
+23:16:27,460 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] [1]
+23:16:27,472 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.type = ?
+23:16:27,473 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] ['section']
+23:16:27,484 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT count(1) AS count_1 
+FROM comment 
+WHERE comment.pageid = ?
+23:16:27,485 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] [6]
+23:16:27,489 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT tag.id AS tag_id, tag.name AS tag_name 
+FROM tag
+23:16:27,490 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] []
+23:16:27,495 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT tag.id AS tag_id, tag.name AS tag_name 
+FROM tag, pagetag 
+WHERE ? = pagetag.pageid AND tag.id = pagetag.tagid
+23:16:27,496 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] [6]
+23:16:27,505 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT page.title AS page_title, page.heading AS page_heading, page.content AS page_content, page.posted AS page_posted 
+FROM page 
+WHERE ? = page.id
+23:16:27,505 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] [6]
+23:16:35,092 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] BEGIN
+23:16:35,096 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.type = ?
+23:16:35,096 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] ['section']
+23:16:35,109 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT nav.id AS nav_id, page.id AS page_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type, page.content AS page_content, page.posted AS page_posted, page.title AS page_title, page.heading AS page_heading 
+FROM nav JOIN page ON nav.id = page.id
+23:16:35,110 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] []
+Debug at: http://127.0.0.1:5000/_debug/view/1284952165
+23:21:58,907 ERROR [chezwam.config.routing] Debug result variable: {}
+23:21:58,911 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] BEGIN
+23:21:58,915 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.path = ? AND nav.type = ? 
+ LIMIT 1 OFFSET 0
+23:21:58,915 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] [u'', 'section']
+23:21:58,930 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.path = ? AND nav.section = ? AND nav.type = ? 
+ LIMIT 1 OFFSET 0
+23:21:58,930 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] [u'index', 1, 'page']
+23:21:58,941 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.section = ? ORDER BY nav."before" DESC
+23:21:58,942 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] [1]
+23:21:58,955 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.section = ? ORDER BY nav."before" DESC
+23:21:58,956 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] [1]
+23:21:58,964 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.type = ?
+23:21:58,965 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] ['section']
+23:21:58,970 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT count(1) AS count_1 
+FROM comment 
+WHERE comment.pageid = ?
+23:21:58,970 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] [6]
+23:21:58,973 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT tag.id AS tag_id, tag.name AS tag_name 
+FROM tag
+23:21:58,974 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] []
+23:21:58,979 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT tag.id AS tag_id, tag.name AS tag_name 
+FROM tag, pagetag 
+WHERE ? = pagetag.pageid AND tag.id = pagetag.tagid
+23:21:58,980 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] [6]
+23:21:59,134 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT page.title AS page_title, page.heading AS page_heading, page.content AS page_content, page.posted AS page_posted 
+FROM page 
+WHERE ? = page.id
+23:21:59,135 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] [6]
+23:22:02,169 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] BEGIN
+23:22:02,172 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.type = ?
+23:22:02,173 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] ['section']
+Debug at: http://127.0.0.1:5000/_debug/view/1284952166
+23:22:07,727 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] BEGIN
+23:22:07,732 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.type = ?
+23:22:07,732 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] ['section']
+23:22:07,741 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT nav.id AS nav_id, page.id AS page_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type, page.content AS page_content, page.posted AS page_posted, page.title AS page_title, page.heading AS page_heading 
+FROM nav JOIN page ON nav.id = page.id
+23:22:07,742 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] []
+Debug at: http://127.0.0.1:5000/_debug/view/1284952167
+23:22:15,349 ERROR [chezwam.config.routing] Debug result variable: {}
+23:22:15,353 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] BEGIN
+23:22:15,356 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.path = ? AND nav.type = ? 
+ LIMIT 1 OFFSET 0
+23:22:15,357 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] [u'', 'section']
+23:22:15,367 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.path = ? AND nav.section = ? AND nav.type = ? 
+ LIMIT 1 OFFSET 0
+23:22:15,368 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] [u'blog', 1, 'page']
+Debug at: http://127.0.0.1:5000/_debug/view/1284952168
+23:22:19,669 ERROR [chezwam.config.routing] Debug result variable: {}
+23:22:19,674 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] BEGIN
+23:22:19,680 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.path = ? AND nav.type = ? 
+ LIMIT 1 OFFSET 0
+23:22:19,681 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] [u'', 'section']
+23:22:19,694 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.path = ? AND nav.section = ? AND nav.type = ? 
+ LIMIT 1 OFFSET 0
+23:22:19,695 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] [u'dev', 1, 'page']
+Debug at: http://127.0.0.1:5000/_debug/view/1284952169
+23:22:24,346 ERROR [chezwam.config.routing] Debug result variable: {}
+23:22:24,351 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] BEGIN
+23:22:24,354 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.path = ? AND nav.type = ? 
+ LIMIT 1 OFFSET 0
+23:22:24,355 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] [u'', 'section']
+23:22:24,363 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.path = ? AND nav.type = ? 
+ LIMIT 1 OFFSET 0
+23:22:24,363 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] [u'dev', 'section']
+23:22:24,373 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.path = ? AND nav.section = ? AND nav.type = ? 
+ LIMIT 1 OFFSET 0
+23:22:24,374 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] [u'svn', 3, 'page']
+23:22:24,382 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.section = ? ORDER BY nav."before" DESC
+23:22:24,383 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] [3]
+23:22:24,391 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.section = ? ORDER BY nav."before" DESC
+23:22:24,392 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] [1]
+23:22:24,405 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.type = ?
+23:22:24,406 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] ['section']
+23:22:24,413 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT count(1) AS count_1 
+FROM comment 
+WHERE comment.pageid = ?
+23:22:24,414 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] [4]
+23:22:24,420 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT tag.id AS tag_id, tag.name AS tag_name 
+FROM tag
+23:22:24,421 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] []
+23:22:24,428 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT tag.id AS tag_id, tag.name AS tag_name 
+FROM tag, pagetag 
+WHERE ? = pagetag.pageid AND tag.id = pagetag.tagid
+23:22:24,429 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] [4]
+23:22:24,436 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT page.title AS page_title, page.heading AS page_heading, page.content AS page_content, page.posted AS page_posted 
+FROM page 
+WHERE ? = page.id
+23:22:24,437 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] [4]
+23:22:27,245 ERROR [chezwam.config.routing] Debug result variable: {}
+23:22:27,250 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] BEGIN
+23:22:27,253 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.path = ? AND nav.type = ? 
+ LIMIT 1 OFFSET 0
+23:22:27,253 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] [u'', 'section']
+23:22:27,263 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.path = ? AND nav.section = ? AND nav.type = ? 
+ LIMIT 1 OFFSET 0
+23:22:27,264 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] [u'dev', 1, 'page']
+Debug at: http://127.0.0.1:5000/_debug/view/1284952170
+23:22:31,190 ERROR [chezwam.config.routing] Debug result variable: {}
+23:22:31,194 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] BEGIN
+23:22:31,197 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.path = ? AND nav.type = ? 
+ LIMIT 1 OFFSET 0
+23:22:31,197 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] [u'', 'section']
+23:22:31,205 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.path = ? AND nav.type = ? 
+ LIMIT 1 OFFSET 0
+23:22:31,206 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] [u'dev', 'section']
+23:22:31,214 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.path = ? AND nav.section = ? AND nav.type = ? 
+ LIMIT 1 OFFSET 0
+23:22:31,215 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] [u'svn', 3, 'page']
+23:22:31,223 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.section = ? ORDER BY nav."before" DESC
+23:22:31,224 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] [3]
+23:22:31,236 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.section = ? ORDER BY nav."before" DESC
+23:22:31,237 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] [1]
+23:22:31,249 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.type = ?
+23:22:31,250 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] ['section']
+23:22:31,258 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT count(1) AS count_1 
+FROM comment 
+WHERE comment.pageid = ?
+23:22:31,259 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] [4]
+23:22:31,263 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT tag.id AS tag_id, tag.name AS tag_name 
+FROM tag
+23:22:31,264 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] []
+23:22:31,269 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT tag.id AS tag_id, tag.name AS tag_name 
+FROM tag, pagetag 
+WHERE ? = pagetag.pageid AND tag.id = pagetag.tagid
+23:22:31,270 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] [4]
+23:22:31,277 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT page.title AS page_title, page.heading AS page_heading, page.content AS page_content, page.posted AS page_posted 
+FROM page 
+WHERE ? = page.id
+23:22:31,278 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] [4]
+23:22:37,096 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] BEGIN
+23:22:37,099 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.type = ?
+23:22:37,100 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] ['section']
+Debug at: http://127.0.0.1:5000/_debug/view/1284952171
+23:23:01,636 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] BEGIN
+23:23:01,639 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.type = ?
+23:23:01,640 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] ['section']
+Debug at: http://127.0.0.1:5000/_debug/view/1284952172
+23:23:04,489 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] BEGIN
+23:23:04,492 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.type = ?
+23:23:04,497 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] ['section']
+Debug at: http://127.0.0.1:5000/_debug/view/1284952173
+23:24:13,157 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] BEGIN
+23:24:13,160 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.type = ?
+23:24:13,160 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] ['section']
+23:24:13,171 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT nav.id AS nav_id, section.id AS section_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav JOIN section ON nav.id = section.id
+23:24:13,172 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] []
+Debug at: http://127.0.0.1:5000/_debug/view/1284952174
+23:25:16,132 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] BEGIN
+23:25:16,135 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.type = ?
+23:25:16,140 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] ['section']
+23:25:16,150 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT nav.id AS nav_id, page.id AS page_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type, page.content AS page_content, page.posted AS page_posted, page.title AS page_title, page.heading AS page_heading 
+FROM nav JOIN page ON nav.id = page.id 
+WHERE nav.id = ? 
+ LIMIT 1 OFFSET 0
+23:25:16,151 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] [u'4']
+23:25:16,157 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] DELETE FROM pagetag WHERE pagetag.pageid = ?
+23:25:16,158 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] [4]
+23:25:16,163 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.section = ? AND nav."before" = ? 
+ LIMIT 1 OFFSET 0
+23:25:16,164 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] [3, 4]
+23:25:16,175 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] UPDATE nav SET "before"=? WHERE nav.id = ?
+23:25:16,176 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] [None, 5]
+23:25:16,181 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT comment.id AS comment_id, comment.pageid AS comment_pageid, comment.content AS comment_content, comment.name AS comment_name, comment.email AS comment_email, comment.created AS comment_created 
+FROM comment 
+WHERE ? = comment.pageid
+23:25:16,181 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] [4]
+23:25:16,192 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT tag.id AS tag_id, tag.name AS tag_name 
+FROM tag, pagetag 
+WHERE ? = pagetag.pageid AND tag.id = pagetag.tagid
+23:25:16,193 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] [4]
+23:25:16,195 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] DELETE FROM page WHERE page.id = ?
+23:25:16,196 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] [4]
+23:25:16,198 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] DELETE FROM nav WHERE nav.id = ?
+23:25:16,199 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] [4]
+23:25:16,200 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] COMMIT
+Debug at: http://127.0.0.1:5000/_debug/view/1284952175
+23:25:24,835 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] BEGIN
+23:25:24,838 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.type = ?
+23:25:24,840 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] ['section']
+23:25:24,849 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] SELECT nav.id AS nav_id, page.id AS page_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type, page.content AS page_content, page.posted AS page_posted, page.title AS page_title, page.heading AS page_heading 
+FROM nav JOIN page ON nav.id = page.id
+23:25:24,850 INFO  [sqlalchemy.engine.base.Engine.0x...4e0c] []
+Debug at: http://127.0.0.1:5000/_debug/view/1284952176
+Starting server in PID 3127.
+serving on http://127.0.0.1:5000
+22:58:38,822 ERROR [chezwam.config.routing] Debug result variable: {}
+22:58:38,874 INFO  [sqlalchemy.engine.base.Engine.0x...724c] BEGIN
+22:58:38,879 INFO  [sqlalchemy.engine.base.Engine.0x...724c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.path = ? AND nav.type = ? 
+ LIMIT 1 OFFSET 0
+22:58:38,880 INFO  [sqlalchemy.engine.base.Engine.0x...724c] [u'', 'section']
+22:58:38,890 INFO  [sqlalchemy.engine.base.Engine.0x...724c] SELECT nav.id AS nav_id, nav.name AS nav_name, nav.path AS nav_path, nav.section AS nav_section, nav."before" AS nav_before, nav.type AS nav_type 
+FROM nav 
+WHERE nav.path = ? AND nav.type = ? 
+ LIMIT 1 OFFSET 0
+22:58:38,891 INFO  [sqlalchemy.engine.base.Engine.0x...724c] [u'photostream', 'section']
