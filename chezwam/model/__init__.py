@@ -101,7 +101,7 @@ class Nav(object):
         return path
 
 class Section(Nav):
-	pass;
+	pass
 
 class Page(Nav):
     pass

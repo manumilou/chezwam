@@ -1,0 +1,29 @@
+#thumbnails-list {
+float: left;
+overflow: auto;
+width: 35%;
+}
+
+#pictures a:hover {
+}
+
+#thumbnails-list ul {
+	list-style: none;
+margin: 0;
+padding: 0;
+}
+
+#thumbnails-list li {
+display: block;
+float: left;
+margin: 0 2px 2px 2px;
+height: 75px;
+margin: 1px;
+padding: 0;
+}
+
+#thumbnails-list li a,
+#thumbnails-list li a:visited {
+color: #fff;
+}
+

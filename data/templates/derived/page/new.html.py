@@ -3,8 +3,8 @@ UNDEFINED = runtime.UNDEFINED
 __M_dict_builtin = dict
 __M_locals_builtin = locals
 _magic_number = 5
-_modified_time = 1284951715.743259
-_template_filename='/home/remix/dev/ChezWam/chezwam/templates/derived/page/new.html'
+_modified_time = 1285192725.0781391
+_template_filename='/home/remix/dev/chezwam/ChezWam/chezwam/templates/derived/page/new.html'
 _template_uri='/derived/page/new.html'
 _template_cache=cache.Cache(__name__, _modified_time)
 _source_encoding='utf-8'
@@ -38,19 +38,19 @@ def render_body(context,**pageargs):
         # SOURCE LINE 1
         __M_writer(u'\n')
         # SOURCE LINE 2
+        __M_writer(u'\n<script type="text/javascript" src="/js/tinymce/jscripts/tiny_mce/tiny_mce.js"></script>\n\n<script type="text/javascript">\ntinyMCE.init({\n\ttheme : "advanced",\n    mode : "textareas"\n\t    });\n\t\t    </script>\n\n')
+        # SOURCE LINE 14
         __M_writer(u'\n\n')
-        # SOURCE LINE 6
-        __M_writer(u'\n\n')
-        # SOURCE LINE 8
+        # SOURCE LINE 16
         __M_writer(escape(h.form_start(h.url_for(controller='page', action='create'), method="post")))
         __M_writer(u'\n    ')
-        # SOURCE LINE 9
+        # SOURCE LINE 17
         __M_writer(escape(fields.body()))
         __M_writer(u'\n    ')
-        # SOURCE LINE 10
+        # SOURCE LINE 18
         __M_writer(escape(h.field(field=h.submit(value="Create Page", name='submit'))))
         __M_writer(u'\n')
-        # SOURCE LINE 11
+        # SOURCE LINE 19
         __M_writer(escape(h.form_end()))
         __M_writer(u'\n')
         return ''
@@ -64,7 +64,7 @@ def render_heading(context):
         _import_ns = {}
         _mako_get_namespace(context, 'fields')._populate(_import_ns, ['*'])
         __M_writer = context.writer()
-        # SOURCE LINE 4
+        # SOURCE LINE 12
         __M_writer(u'\n    <h1 class="main">Create a New Page</h1>\n')
         return ''
     finally:

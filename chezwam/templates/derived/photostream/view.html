@@ -1,0 +1,46 @@
+<%inherit file="/base/index.html"/>
+
+<%def name="title()">My photostream</%def>
+<%def name="heading()"><h1>My photostream</h1></%def>
+
+<div id="thumbnails-list">
+    <ul id="pictures"></ul>
+</div>
+
+<div id="main-picture">
+	<div id="loadingStatus"></div>
+</div>
+
+<script>
+// Event delegate
+        $('#pictures').delegate ('a', 'click', function (event) {
+            event.preventDefault ();
+            var img = $(this).find('img')[0];
+            $('#main-picture').html ($('<div class="picture-title">' + img.title + '</div><img class="main-picture" src="' + img.src.replace(/_s\.jpg$/, '.jpg') + '" />'));
+
+            /* Get photo information */
+            infos = getFlickrPhotoInfos (apikey, img.alt);
+            console.log(infos[0]);
+            //$('#picture-info .description').empty().html(infos,join());
+            //$('#picture-info .date').empty().html(infos['date']);
+        });
+
+        // $('<div id="loadingStatus"><img src="ajax-loader.gif"></div>').appendTo('body');
+        $("#loadingStatus").empty().html('<img src="images/ajax-loader.gif" />');
+
+        $('#loadingStatus').ajaxStart (function() {
+                $(this).fadeIn ();
+                }).ajaxComplete (function (){
+                    $(this).fadeOut ();
+                    });
+
+$.getJSON("http://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=12b846ff3a8d6af1e209162b700c07e2&user_id=50323661%40N03&format=json&jsoncallback=?", function (data) {
+
+    $.each (data.photos.photo, function (i, item) {
+	        // http://farm{farm-id}.static.flickr.com/{server-id}/{id}_{secret}_[mstb].jpg
+			        $('ul#pictures').append ("<li><a class='thumb' name='leaf' href='http://farm" + item.farm + ".static.flickr.com/" + item.server + "/" + item.id + "_" + item.secret + "_m.jpg'><img src='http://farm" + item.farm + ".static.flickr.com/" + item.server + "/" + item.id + "_" + item.secret + "_s.jpg></a></li>");
+					    }); 
+						});
+</script>
+
+

@@ -1,5 +1,13 @@
 <%inherit file="/base/index.html" />
 <%namespace file="fields.html" name="fields" import="*"/>
+<script type="text/javascript" src="/js/tinymce/jscripts/tiny_mce/tiny_mce.js"></script>
+
+<script type="text/javascript">
+tinyMCE.init({
+	theme : "advanced",
+    mode : "textareas"
+	    });
+		    </script>
 
 <%def name="heading()">
     <h1 class="main">Create a New Page</h1>

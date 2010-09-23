@@ -3,8 +3,8 @@ UNDEFINED = runtime.UNDEFINED
 __M_dict_builtin = dict
 __M_locals_builtin = locals
 _magic_number = 5
-_modified_time = 1284952919.063884
-_template_filename='/home/remix/dev/ChezWam/chezwam/templates/derived/page/view.html'
+_modified_time = 1285180698.8219659
+_template_filename='/home/remix/dev/chezwam/ChezWam/chezwam/templates/derived/page/view.html'
 _template_uri='/derived/page/view.html'
 _template_cache=cache.Cache(__name__, _modified_time)
 _source_encoding='utf-8'
@@ -44,7 +44,7 @@ def render_body(context,**pageargs):
         # SOURCE LINE 4
         __M_writer(u'\n\n')
         # SOURCE LINE 6
-        __M_writer(escape(c.page.content))
+        __M_writer(escape(literal(c.page.content)))
         __M_writer(u'\n\n')
         # SOURCE LINE 17
         __M_writer(u'\n\n')

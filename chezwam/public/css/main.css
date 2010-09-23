@@ -1,27 +1,92 @@
 span.error-message, span.required {
-    font-weight: bold;
-    color: #f00;
+	font-weight: bold;
+color: #f00;
 }
 
 #flash {
-    background: #ffc;
-    padding: 5px;
-    border: 1px dotted #000;
-    margin-bottom: 20px;
+background: #ffc;
+padding: 5px;
+border: 1px dotted #000;
+		margin-bottom: 20px;
 }
 #flash p { margin: 0px; padding: 0px; }
 
 
 body {
-	font-family: "Georgia";
+	font-family: "Verdana", "Georgia";
 	font-size: 1em;
-	color: #777;
-	background: #dedede;
+color: #777;
+background: #f7f7f7;
 }
 
-#container {
-	width: 960px;
-	margin: auto;
-	border: 1px solid #000;
-	background: rgba(255,255,255,0.9);
+h1 {
+	font-size: 1.5em;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+h2 { 
+	font-size: 1em;
+}
+
+li {
+	list-style-image: url("/images/bullet.png");
+}
+
+a:link,
+a:visited {
+	color: #e8bf2f;
+}
+
+.home a:link,
+.home a:visited {
+	color: rgba(56,116,119, 1);
+}
+
+#main {
+width: 960px;
+margin: auto;
+clear: both;
+	   margin-top: 20px;
+}
+
+#header {
+background: rgba(56, 116, 119, 0.85);
+height: 30px;
+width: 100%;
+color: #f2f2f2;
+-webkit-box-shadow: 2px 2px 2px #000;
+-moz-box-shadow: 2px 2px 2px #000;
+}
+
+.clear {
+clear: both;
+}
+
+.clear-left {
+clear: left;
+}
+
+.clear-right {
+clear: right;
+}
+
+#header .home {
+float: left;
+line-height: 30px;
+}
+
+#header .signature {
+float: right;
+line-height: 30px;
+	font-size: 1.2em;
+}
+
+#header .inside {
+	margin: 0 20px;
+}
+
+.signature span {
+	color: #e8bf2f;
+	font-weight: bold;
 }

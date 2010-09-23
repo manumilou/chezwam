@@ -1,4 +1,3 @@
-<%namespace name="navigation" file="/component/navigation.html" import="*" />\
 
 ## -*- coding: utf-8 -*-
 
@@ -6,17 +5,24 @@
 "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
+	<meta http-equiv="content-script-type" content="text/javascript">
     <title>${self.title()}</title>
+	<link href="/css/photostream.css" media="screen" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="/js/jquery-1.4.2.min.js"></script>
     ${self.head()}
 </head>
 <body>
 <div id="container">
+<div id="header-region">
     ${self.header()}
-    ${self.tabs()}
-    ${self.menu()}
+ ##   ${self.tabs()}
+  ##  ${self.menu()}
+</div>
+<div id="main">
     ${self.heading()}
 	${self.flash()}
     ${next.body()}
+</div>
     ${self.footer()}
 
 </div>
@@ -30,12 +36,18 @@
 
 <%def name="header()">
 <div id="header">
+	<div class="inside">
 	<a name="top"></a>
+	<div class="home">
+		<a href="${h.url_for('path', id=6)}"><img src="/images/home-normal.png" title="Chez Wam" alt="Chez Wam"/></a>
+	</div>
+	<div class="signature"><span>@</span>manumilou</div>
+	</div>
 </div>
 </%def>
 
-<%def name="tabs()">${navigation.tabs()}</%def>
-<%def name="menu()">${navigation.menu()}</%def>
+##<%def name="tabs()">${navigation.tabs()}</%def>
+##<%def name="menu()">${navigation.menu()}</%def>
 <%def name="heading()"><h1>${c.heading or 'No Title'}</h1></%def>
 
 <%def name="footer()">

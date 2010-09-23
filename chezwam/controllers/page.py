@@ -1,12 +1,12 @@
 import logging
 
 from pylons import request, response, session, tmpl_context as c
-from pylons.controllers.util import abort
+from pylons.controllers.util import abort, redirect
 from pylons.decorators import validate
 from pylons.decorators.rest import restrict
 import formencode
 from formencode import htmlfill
-from pylons import session
+from pylons import session, url
 from sqlalchemy import delete
 
 from chezwam.lib.base import BaseController, render
@@ -103,7 +103,7 @@ class PageController(BaseController):
         	self.form_result['before'])
     	meta.Session.commit()
 		# Issue an HTTP redirect
-        return redirect_to('path', id=page.id)
+        return redirect(url('path', id=page.id))
 
     def edit(self, id=None):
 		if id is None:
@@ -144,7 +144,7 @@ class PageController(BaseController):
     	session['flash'] = 'Page successfully updated.'
     	session.save()
     	# Issue an HTTP redirect
-        return redirect_to('path', id=page.id)
+        return redirect(url('path', id=page.id))
 
     def list(self):
 		c.pages=meta.Session.query(model.Page).all()
@@ -185,6 +185,6 @@ class PageController(BaseController):
     	session['flash'] = 'Tags successfully updated.'
     	session.save()
 		# Issue an HTTP redirect
-        return redirect_to('path', id=page.id)
+        return redirect(url('path', id=page.id))
 
 

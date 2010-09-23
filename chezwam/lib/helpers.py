@@ -8,6 +8,7 @@ from formbuild.helpers import field
 from formbuild import start_with_layout as form_start, end_with_layout as form_end
 from webhelpers.html.tags import *
 from routes import url_for, redirect_to
+from routes.util import redirect_to
 from webhelpers.html.tags import stylesheet_link
 from webhelpers.html.tags import link_to
 from formbuild.helpers import checkbox_group

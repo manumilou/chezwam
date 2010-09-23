@@ -1,13 +1,12 @@
 import logging
 
 from pylons import request, response, session, tmpl_context as c
-from pylons.controllers.util import abort
-from routes.util import redirect_to
+from pylons.controllers.util import abort, redirect
 from pylons.decorators import validate
 from pylons.decorators.rest import restrict
 import formencode
 from formencode import htmlfill
-from pylons import session
+from pylons import session, url
 import webhelpers.paginate as paginate
 
 
@@ -62,10 +61,7 @@ class CommentController(BaseController):
     	meta.Session.add(comment)
     	meta.Session.commit()
     	# Issue an HTTP redirect
-    	response.status_int = 302
-        response.headers['location'] = h.url_for(pageid=c.page.id,controller='comment',
-            action='view', id=comment.id)
-        return "Moved temporarily"
+        return redirect(url('path', id=comment.id))
 
 
     def edit(self, id=None):
@@ -98,10 +94,7 @@ class CommentController(BaseController):
     	session['flash'] = 'Comment successfully updated.'
     	session.save()
     	# Issue an HTTP redirect
-    	response.status_int = 302
-        response.headers['location'] = h.url_for(pageid=c.page.id, controller='comment', action='view',
-            id=comment.id)
-        return "Moved temporarily"
+        return redirect(url('path', id=comment.id))
 
 
 
